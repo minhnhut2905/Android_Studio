@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App Booking Hotel</string>
+    <string name="action_home">Trang chủ</string>
+    <string name="action_dondatcho">Đơn đặt chỗ</string>
+    <string name="action_uudai">Ưu đãi</string>
+    <string name="action_cart">Xe đẩy hàng</string>
+    <string name="action_my_account">Cá nhân</string>
+    <string name="btn_datngay">Đặt ngay</string>
+</resources>

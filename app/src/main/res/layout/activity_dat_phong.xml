@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:orientation="vertical"
+    tools:context=".DatPhong_Activity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="120dp"
+        android:padding="4dp"
+        android:text="ĐẶT PHÒNG"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/eKhachsan"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_account_box"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Nhập tên khách sạn"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/eHoten"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/eHoten"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_ic_launcher_email"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Nhập họ và tên"
+        android:inputType="textEmailAddress"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/dtpNgaydat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/dtpNgayden"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_lock"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint=" Ngày đến"
+            android:inputType="text|date"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="" />
+
+        <Button
+            android:id="@+id/btnChonngayden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="300dp"
+            android:background="@drawable/btn"
+            android:text="Chọn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/dtpNgaydat"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_lock"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Ngày đặt"
+            android:inputType="text|date"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="" />
+
+        <Button
+            android:id="@+id/btnChonngaydat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="300dp"
+            android:background="@drawable/btn"
+            android:text="Chọn" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/eSongay"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_lock"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint=" Số ngày ở dự kiến"
+        android:inputType="text|numberDecimal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDangKy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="" />
+    <EditText
+        android:id="@+id/cboLoaiphong"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/baseline_meeting_room_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint=" Chọn loại phòng"
+        android:inputType="text|numberDecimal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDangKy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="" />
+    <EditText
+        android:id="@+id/ethanhtien"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/baseline_meeting_room_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint=" Thành tiền"
+        android:inputType="text|numberDecimal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDangKy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="" />
+
+    <Button
+        android:id="@+id/btnXemthu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/btn"
+        android:padding="8dp"
+        android:text="Xem Thử" />
+
+    <Button
+        android:id="@+id/btnDangKy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/custom_btn_datngay"
+        android:text="Đặt Phòng"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</LinearLayout>
